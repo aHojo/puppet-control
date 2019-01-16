@@ -26,12 +26,3 @@ mod 'ssh',
 mod 'ntp',
   :git => 'https://github.com/amh5366/puppet-ntp.git',
   :ref => 'master'
-
-
-mod 'profile',
-  :git => 'https://github.com/amh5366/puppet-profile.git',
-  :ref => 'master'
-
-mod 'role',
-  :git => 'https://github.com/amh5366/puppet-role.git',
-  :ref => 'master'
