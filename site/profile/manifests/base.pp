@@ -7,7 +7,7 @@ class profile::base (
 ){
   
   include ::ssh
-  class  { '::ntp':  
+  class { '::ntp':  
     servers => $ntp_servers,
   }
 
