@@ -1,0 +1,12 @@
+---
+profile::apache::apache_vhost_servers: {
+  'criticalhojo4c.mylabserver.com': {
+    'port': 80,
+    'docroot': '/var/www/criticalhojo4'
+  },
+
+  'criticalhojo4b.mylabserver.com': {
+    'port': 80,
+    'docroot': '/var/www/criticalhojo4b'
+  }
+}
