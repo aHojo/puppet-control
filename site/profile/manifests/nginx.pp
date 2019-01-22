@@ -1,8 +1,13 @@
-class profile::nginx ()
+class profile::nginx (
+ Array $vhost,
+)
 {
   include ::nginx
-
-  ::nginx::vhost { $facts['fqdn']:
-  
+ 
+  $vhost.each |$host| {
+    #::nginx::vhost { $host['fqdn']: 
+      port           => $host['port'],
+      server_aliases => $host['server_aliases'],
+    }
   }
 }
