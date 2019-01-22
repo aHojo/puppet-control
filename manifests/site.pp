@@ -12,7 +12,6 @@
 ## Active Configurations ##
 
 # Disable filebucket by default for all File resources:
-#https://docs.puppet.com/pe/2015.3/release_notes.html#filebucket-resource-no-longer-created-by-default
 File { backup => false }
 
 # DEFAULT NODE
@@ -24,6 +23,21 @@ File { backup => false }
 # definition. If there are no other nodes in this file, classes declared here
 # will be included in every node's catalog, *in addition* to any classes
 # specified in the console for that node.
+
+#node 'criticalhojo3c.mylabserver.com'{
+#  notify { 'This is UBUNTU': }
+#  include ntp
+#}
+
+node /^criticalhojo3/ {
+   notify { 'This is using regex to find ubuntu': }
+   include ntp
+}
+
+#Declare this inside the puppet master so that these distros are supported by puppet. 
+node 'criticalhojos41c.mylabserver.com' {
+  notify { 'This matches a NODE!!!!!!!!!!!!!!!': }
+} 
 
 node default {
   # This is where you can declare classes for all nodes.
