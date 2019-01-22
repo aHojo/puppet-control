@@ -34,6 +34,10 @@ node /^criticalhojo3/ {
    include ntp
 }
 
+node 'criticalhojos4c.mylabserver.com' {
+  notify { 'This matches a NODE!!!!!!!!!!!!!!!': }
+} 
+
 #Declare this inside the puppet master so that these distros are supported by puppet. 
 node 'criticalhojos4c.mylabserver.com' {
   notify { 'This matches a NODE!!!!!!!!!!!!!!!': }
