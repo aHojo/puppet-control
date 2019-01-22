@@ -10,6 +10,7 @@ profile::apache::apache_vhost_servers: {
     'docroot': '/var/www/criticalhojo4b'
   }
 }
+
 profile::nginx::vhost:
   - 'fqdn': 'tthomsen2.mylabserver.com'
     'port': 80
