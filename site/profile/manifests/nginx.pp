@@ -5,7 +5,7 @@ class profile::nginx (
   include ::nginx
  
   $vhost.each |$host| {
-    #::nginx::vhost { $host['fqdn']: 
+    ::nginx::vhost { $host['fqdn']: 
       port           => $host['port'],
       server_aliases => $host['server_aliases'],
     }
