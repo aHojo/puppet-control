@@ -39,9 +39,9 @@ node 'criticalhojo3c.mylabserver.com' {
 } 
 
 #Declare this inside the puppet master so that these distros are supported by puppet. 
-node 'criticalhojo4c.mylabserver.com' {
-  notify { 'This matches a NODE!!!!!!!!!!!!!!!': }
-} 
+#node 'criticalhojo4c.mylabserver.com' {
+#  notify { 'This matches a NODE!!!!!!!!!!!!!!!': }
+#} 
 
 node default {
   # This is where you can declare classes for all nodes.
