@@ -18,4 +18,5 @@ profile::nginx::vhost:
   - 'fqdn': 'tthomsen2b.mylabserver.com'
     'port': 80
     'server_aliases': 'tthomsen2b1.mylabser.com'
- 
+classes:
+  - profile::nginx
